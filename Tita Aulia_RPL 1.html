@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>TITA AULIA KELAS 12</title>
+    <style>
+        /* Umum */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigasi */
+        nav {
+            background: linear-gradient(to right, #6BBF59, #4CAF50); /* Gradasi hijau rumput */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid #388E3C;
+        }
+
+        nav .logo {
+            font-size: 1.7em;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            text-decoration: none;
+        }
+
+        /* Formulir */
+        main {
+            padding: 30px;
+            background-color: white;
+            max-width: 600px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background: linear-gradient(to right, #66BB6A, #43A047);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #57A05A, #388E3C);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #4CAF50, #6BBF59); /* Gradasi hijau rumput */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid #388E3C;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">TITA STORE</div>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Form Pemesanan TITA STORE</h1>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+            <label>Nama:</label><br>
+            <input type="text" name="nama_produk" required><br>
+
+            <label>Jenis Sendal:</label><br>
+            <select name="kategori" required>
+                <option value="" disabled selected>Pilih Kategori</option>
+                <option value="SENDAL ADIDAS">SENDAL ADIDAS</option>
+                <option value="SENDAL HAVIANAS">SENDAL HAVIANAS</option>
+                <option value="SENDAL CARVIL">SENDAL CARVIL</option>
+                <option value="SENDAL CROCS">SENDAL CROCS</option>
+                <option value="SENDAL EIGER">SENDAL EIGER</option>
+                <option value="SENDAL">LAINNYA</option>
+            </select><br>
+
+            <label>Ukuran Sendal:</label><br>
+            <textarea name="ukuran_sendal" required></textarea><br>
+
+            <label>Nomor HP:</label><br>
+            <input type="tel" name="nomor_hp" required><br>
+
+            <label>Pesan untuk Penjual:</label><br>
+            <textarea name="pesan_penjual" required></textarea><br>
+
+            <label>Jumlah Pemesanan:</label><br>
+            <input type="number" name="stok" required><br>
+
+            <button type="submit" name="submit">Kirim Pesanan</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TITA STORE. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
